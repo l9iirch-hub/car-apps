@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-card {
+    @apply bg-surface/60 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+  
+  .glass-nav {
+    @apply bg-background/80 backdrop-blur-lg border-b border-white/10;
+  }
+  
+  .btn-primary {
+    @apply bg-primary hover:bg-primaryHover text-black font-semibold px-6 py-3 rounded-md transition-all duration-300 transform active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border border-white/20 hover:border-primary hover:text-primary text-white font-medium px-6 py-3 rounded-md transition-all duration-300;
+  }
+  
+  .input-field {
+    @apply bg-surfaceLight border border-white/10 rounded-md px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors w-full placeholder-textMuted;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: default;
+}
+
+/* Base styles to ensure app takes full height */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,24 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants; /* Optional for Tailwind v3.4+ features */
 
 @layer components {
   .glass-card {
     @apply bg-surface/60 backdrop-blur-md border border-white/10 shadow-xl;
   }
-  
+
   .glass-nav {
     @apply bg-background/80 backdrop-blur-lg border-b border-white/10;
   }
-  
+
   .btn-primary {
     @apply bg-primary hover:bg-primaryHover text-black font-semibold px-6 py-3 rounded-md transition-all duration-300 transform active:scale-95;
   }
-  
+
   .btn-secondary {
     @apply bg-transparent border border-white/20 hover:border-primary hover:text-primary text-white font-medium px-6 py-3 rounded-md transition-all duration-300;
   }
-  
+
   .input-field {
     @apply bg-surfaceLight border border-white/10 rounded-md px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors w-full placeholder-textMuted;
   }

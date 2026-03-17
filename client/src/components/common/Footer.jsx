@@ -23,7 +23,7 @@ const Footer = () => {
               <li><a href="#" className="text-textMuted hover:text-primary transition-colors">Corporate Events</a></li>
             </ul>
           </div>
-          
+          {/* hna ba9i chi mochki  */}
           <div>
             <h3 className="text-white font-medium mb-6 uppercase tracking-wider text-sm">Connect</h3>
             <ul className="space-y-4">
